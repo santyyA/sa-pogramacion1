@@ -3,7 +3,10 @@ const mostrar = () => {
     const  a = document.getElementById("inp_A").value
     const  b = document.getElementById("inp_B").value
     const  c = document.getElementById("inp_C").value
-    const instancia = new Bhaskara(a,b,c)
+    const instancia = new Bhaskara()
+    instancia.coef_a = a
+    instancia.coef_b = b
+    instancia.ti_c = c
     //ejecute la funcion que calcula la raiz 1
     const r1 = instancia.calcularRaiz1()
     //ejecute la funcion que calcula la raiz 2

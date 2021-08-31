@@ -2,10 +2,8 @@ export default class Bhaskara {
     coef_a;
     coef_b;
     ti_c;
-    constructor(a,b,c){
-        this.coef_a = a;
-        this.coef_b = b;
-        this.ti_c = c;
+    constructor(){
+        
     }
     calcularRaiz1 (){
         const bloque1 = (Math.pow(this.coef_b,2)) - (4*this.coef_a*this.ti_c)
